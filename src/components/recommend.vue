@@ -1,5 +1,5 @@
 <template>
-  <slider>
+  <slider v-if="sliderList.length">
     <div v-for="item in sliderList">
       <a :href="item.linkUrl">
         <img :src="item.picUrl" />
